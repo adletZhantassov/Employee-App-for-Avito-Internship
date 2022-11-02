@@ -15,6 +15,9 @@
 		6011B1982911A75D005B78B8 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6011B1972911A75D005B78B8 /* RootViewController.swift */; };
 		6011B19A2911B202005B78B8 /* EmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6011B1992911B202005B78B8 /* EmployeeCell.swift */; };
 		6011B19C29122764005B78B8 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6011B19B29122764005B78B8 /* Employee.swift */; };
+		6011B1A329122B3D005B78B8 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6011B1A229122B3D005B78B8 /* Webservice.swift */; };
+		6011B1A629122CCA005B78B8 /* EmployeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6011B1A529122CCA005B78B8 /* EmployeeViewModel.swift */; };
+		6011B1A8291234B6005B78B8 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6011B1A7291234B6005B78B8 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		6011B1972911A75D005B78B8 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		6011B1992911B202005B78B8 /* EmployeeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeCell.swift; sourceTree = "<group>"; };
 		6011B19B29122764005B78B8 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		6011B1A229122B3D005B78B8 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		6011B1A529122CCA005B78B8 /* EmployeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewModel.swift; sourceTree = "<group>"; };
+		6011B1A7291234B6005B78B8 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +66,13 @@
 		6011B1822911A486005B78B8 /* Employee-App-Avito Internship */ = {
 			isa = PBXGroup;
 			children = (
+				6011B1A029122974005B78B8 /* Models */,
+				6011B19E29122962005B78B8 /* Controllers */,
+				6011B1A429122CA9005B78B8 /* ViewModels */,
+				6011B19F2912296E005B78B8 /* Cells */,
+				6011B1A129122B26005B78B8 /* Webservice */,
 				6011B19D2912276A005B78B8 /* Helper */,
-				6011B1872911A486005B78B8 /* ViewController.swift */,
 				6011B1912911A487005B78B8 /* Info.plist */,
-				6011B1972911A75D005B78B8 /* RootViewController.swift */,
-				6011B1992911B202005B78B8 /* EmployeeCell.swift */,
-				6011B19B29122764005B78B8 /* Employee.swift */,
 			);
 			path = "Employee-App-Avito Internship";
 			sourceTree = "<group>";
@@ -73,12 +80,54 @@
 		6011B19D2912276A005B78B8 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				6011B1A7291234B6005B78B8 /* Reachability.swift */,
 				6011B1832911A486005B78B8 /* AppDelegate.swift */,
 				6011B1852911A486005B78B8 /* SceneDelegate.swift */,
 				6011B18C2911A487005B78B8 /* Assets.xcassets */,
 				6011B18E2911A487005B78B8 /* LaunchScreen.storyboard */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		6011B19E29122962005B78B8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6011B1872911A486005B78B8 /* ViewController.swift */,
+				6011B1972911A75D005B78B8 /* RootViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6011B19F2912296E005B78B8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6011B1992911B202005B78B8 /* EmployeeCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6011B1A029122974005B78B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6011B19B29122764005B78B8 /* Employee.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6011B1A129122B26005B78B8 /* Webservice */ = {
+			isa = PBXGroup;
+			children = (
+				6011B1A229122B3D005B78B8 /* Webservice.swift */,
+			);
+			path = Webservice;
+			sourceTree = "<group>";
+		};
+		6011B1A429122CA9005B78B8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6011B1A529122CCA005B78B8 /* EmployeeViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,10 +201,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6011B1882911A486005B78B8 /* ViewController.swift in Sources */,
+				6011B1A329122B3D005B78B8 /* Webservice.swift in Sources */,
 				6011B19C29122764005B78B8 /* Employee.swift in Sources */,
 				6011B1842911A486005B78B8 /* AppDelegate.swift in Sources */,
 				6011B1982911A75D005B78B8 /* RootViewController.swift in Sources */,
+				6011B1A8291234B6005B78B8 /* Reachability.swift in Sources */,
 				6011B1862911A486005B78B8 /* SceneDelegate.swift in Sources */,
+				6011B1A629122CCA005B78B8 /* EmployeeViewModel.swift in Sources */,
 				6011B19A2911B202005B78B8 /* EmployeeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
